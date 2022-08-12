@@ -3,7 +3,7 @@
 [title-img]:https://img.shields.io/badge/-LAVS-blue
 [profile]:https://github.com/LAVS-TM
 
-This repository conatins a simple reimplementation of the **JPEG** algorithm.
+This repository contains a simple reimplementation of the **JPEG** algorithm.
 
 ## Objectives
 
