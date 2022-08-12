@@ -17,10 +17,20 @@ The main goal was to recode JPEG for color images. In particular, our code is su
 
 The **compression** and the **decompression** process are both implemented in four different steps.
 
+For the **compression** :
+
 First, the input image is divided into non-overlapping 8 x 8 **macro-blocks**. 
 
-<img src="https://github.com/LAVS-TM/Map-Generation/blob/main/doc/CityExample.png" alt="Example city">
+<img src="https://github.com/LAVS-TM/JPEG/blob/main/samples/blocks.png" alt="Macro-Blocks">
 
+Then, the **DCT** of each (8 x 8 block) - 128 is computed.
+This **DCT** is then quantized by some quantification matrix Q.
+
+Finally, the algorithm arrange the quantized values in sequence following the **zigzag order** and use **Huffman encoding** with pre-determined conversion tables.
+
+JPEG **decompression process** is the exact inverse of the compression scheme.
+
+<img src="https://github.com/LAVS-TM/JPEG/blob/main/samples/jpeg-process.png" alt="Jpeg">
 
 ## Usage
 
