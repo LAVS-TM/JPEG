@@ -15,6 +15,10 @@ The main goal was to recode JPEG for color images. In particular, our code is su
 
 ## Implementation
 
+The **compression** and the **decompression** process are both implemented in four different steps.
+
+First, the input image is divided into non-overlapping 8 x 8 **macro-blocks**. 
+
 <img src="https://github.com/LAVS-TM/Map-Generation/blob/main/doc/CityExample.png" alt="Example city">
 
 
