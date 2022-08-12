@@ -15,6 +15,9 @@ The main goal was to recode JPEG for color images. In particular, our code is su
 
 ## Implementation
 
+<img src="https://github.com/LAVS-TM/Map-Generation/blob/main/doc/CityExample.png" alt="Example city">
+
+
 ## Usage
 
 A test of our **JPEG** compression algorithm is simply available by executing the `jpeg.py` python file as follow :
@@ -22,6 +25,3 @@ A test of our **JPEG** compression algorithm is simply available by executing th
 ```python
 python jpeg.py
 ```
-
-<img src="https://github.com/LAVS-TM/Map-Generation/blob/main/doc/CityExample.png" alt="Example city">
-
