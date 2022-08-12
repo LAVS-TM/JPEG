@@ -7,6 +7,12 @@ This repository conatins a simple reimplementation of the **JPEG** algorithm.
 
 ## Objectives
 
+The main goal was to recode JPEG for color images. In particular, our code is supposed to :
+* Manage the color, leaving the user the choice of compression in the **RGB** or **YUV** space, as well as the different **sub-sampling options** (4:4:4, 4:2:2 and 4: 2:0) of chroma.
+* Handle the case of images whose dimensions are not necessarily multiples of 8.
+* Allow the user to choose the quality index q for the **luminance quantization matrix**.
+* Encode via Huffman's JPEG tables the different macro-blocks, to be able to calculate the (true) compression rate of each macro-block (and therefore of the image in total).
+
 ### Usage
 
 To configure the city generation, you need to open `city.py` in the `src` folder and modify the values assigned to the City object. The **City** class is of the form:
